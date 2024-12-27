@@ -5,6 +5,7 @@
  */
 
 #include "corne.dtsi"
+#include "pointing-shared.dtsi"
 
 &kscan0 {
     col-gpios
@@ -15,4 +16,8 @@
         , <&pro_micro 15 GPIO_ACTIVE_HIGH>
         , <&pro_micro 14 GPIO_ACTIVE_HIGH>
         ;
+};
+
+&glidepoint_listener {
+    status = "okay";
 };
